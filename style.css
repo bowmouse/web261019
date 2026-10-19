@@ -15,7 +15,6 @@
 
 
  .card {
-     width: 260px;
      border-radius: 12px;
      overflow: hidden;
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -52,4 +51,29 @@
      padding: 4px 10px;
      border-radius: 999px;
      font-weight: bold;
+ }
+
+ .top {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .nav ul {
+     display: flex;
+     gap: 20px;
+     liststyle: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ .nav a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ .board {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 20px;
  }

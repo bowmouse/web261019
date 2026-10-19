@@ -3,14 +3,23 @@
      min-height: 100vh;
      box-sizing: border-box;
      margin: 0;
-     padding: 40px;
+     padding: 16px;
      font-family: "Noto Sans KR", Gowun Dodum;
+     color: #f5f5f5;
 
  }
 
  h1,
  footer {
      color: #fff;
+ }
+
+ main,
+ .top,
+ .hero,
+ footer {
+     max-width: 1100px;
+     margin: 0 auto 24px;
  }
 
 
@@ -21,6 +30,7 @@
      background: #fff;
      position: relative;
      transition: transform 0.3s, box-shadow 0.3s;
+     color: #222
  }
 
 
@@ -61,10 +71,11 @@
 
  .nav ul {
      display: flex;
-     gap: 20px;
-     liststyle: none;
+     gap: 8px;
+     list-style: none;
      margin: 0;
      padding: 0;
+     flex-direction: column;
  }
 
  .nav a {
@@ -76,4 +87,54 @@
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
      gap: 20px;
+ }
+
+ .hero {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://image.tmdb.org/t/p/w1280https://image.tmdb.org/t/p/w342/gHQTg7KgC7VPMcy6f6zfJc8fu34.jpg");
+     background-size: cover;
+     background-position: center;
+     min-height: 40vh;
+     padding: 24px;
+     box-sizing:
+         border-box;
+     color: #fff;
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+
+ @keyframes rise {
+     from {
+         opacity: 0;
+         transform:
+             translateY(20px);
+     }
+ }
+
+ .card {
+     animation: rise 0.6s backwards;
+ }
+
+ .card:nth-child(2) {
+     animation-delay:
+         0.1s;
+ }
+
+ @media (min-width: 600px) {
+     nav ul {
+         flex-direction: row;
+         gap: 20px;
+     }
+ }
+
+ @media (min-width: 1024px) {
+     .hero {
+         min-height: 60vh;
+     }
+
+     .hero h2 {
+         font-size: 3rem;
+     }
  }

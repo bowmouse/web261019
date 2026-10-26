@@ -89,7 +89,7 @@
  }
 
  .hero {
-     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://image.tmdb.org/t/p/w1280https://image.tmdb.org/t/p/w342/gHQTg7KgC7VPMcy6f6zfJc8fu34.jpg");
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfpopWR9Gi7ymrfkxL9TJ7E7NU-YJnqMRRirqe1joPXA&s=10");
      background-size: cover;
      background-position: center;
      min-height: 40vh;
